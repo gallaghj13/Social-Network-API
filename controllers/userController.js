@@ -1,4 +1,5 @@
 const User = require('../models/User');
+const Thought = require('../models/Thought');
 
 module.exports = {
   getUsers(req, res) {
@@ -47,10 +48,10 @@ module.exports = {
         .then(() => res.json({ message: 'User and associated thoughts deleted'}))
         .catch((err) => res.status(500).json(err));
   },
-  addFriend(req, res) {
+  addFriend({params}, res) {
       User.findOneAndUpdate(
           { _id: req.params.userId },
-          { $addToSet: { firends: req.body }},
+          { $addToSet: { friends: params.friendId }},
           { runValidators: true, new: true }
       )
         .then((user) =>
