@@ -11,7 +11,10 @@ const {
 } = require('../../controllers/thoughtController');
 
 // /api/thoughts
-router.route('/').get(getThoughts).post(createThought);
+router
+  .route('/')
+  .get(getThoughts)
+  .post(createThought);
 
 // /api/thoughts/:thoughtId
 router
@@ -21,4 +24,7 @@ router
   .delete(deleteThought);
 
 // /api/thoughts/:thoughtId/reactions
-router.route('/:thoughtId/reactions').post(createReaction).delete(deleteReaction);
+router
+  .route('/:thoughtId/reactions')
+  .post(createReaction)
+  .delete(deleteReaction);
