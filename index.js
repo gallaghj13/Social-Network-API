@@ -4,7 +4,7 @@ const routes = require('./routes');
 
 const cwd = process.cwd();
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 const app = express();
 
 const activity = cwd.includes('Social-Network-API')
