@@ -30,7 +30,7 @@ In order for this application to work you will need the node environment and Mon
 ![alt-text](./public/images/Photo4.png) <br />
 
 
-A walkthrough video can be seen via this link: https://watch.screencastify.com/v/GkSgTNU0OoFbKmEivh0X
+A walkthrough video can be seen via this link: https://watch.screencastify.com/v/qtvGyezxDapnZI7vnWxG
 
 ## Credits
 
